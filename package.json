@@ -2,7 +2,7 @@
   "name": "bumblebee-hotword-node",
   "version": "0.0.1",
   "description": "BumbleBee Hotword for NodeJS",
-  "main": "lib/bumblebee-hotword-node.js",
+  "main": "lib/bumblebee-node.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

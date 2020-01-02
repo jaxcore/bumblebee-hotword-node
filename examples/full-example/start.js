@@ -28,6 +28,10 @@ bumblebee.on('end', function () {
 
 bumblebee.start(); // start the microphone
 
+// setTimeout(function() { // stop after 10 secconds:
+// 	bumblebee.stop();
+// },10000);
+
 console.log('Active Hotwords:', Object.keys(bumblebee.hotwords));
 
 function playSound() {
