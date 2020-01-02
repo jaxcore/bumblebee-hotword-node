@@ -1,0 +1,30 @@
+{
+  "name": "bumblebee-hotword-node",
+  "version": "0.0.1",
+  "description": "BumbleBee Hotword for NodeJS",
+  "main": "lib/bumblebee-hotword-node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaxcore/bumblebee-hotword-node.git"
+  },
+  "keywords": [
+    "wake",
+    "word",
+    "hotword",
+    "speech",
+    "recognition"
+  ],
+  "author": "Dan Steinman",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jaxcore/bumblebee-hotword-node/issues"
+  },
+  "homepage": "https://github.com/jaxcore/bumblebee-hotword-node#readme",
+  "dependencies": {
+    "node-audiorecorder": "^1.4.2",
+    "pcm-convert": "^1.6.5"
+  }
+}
