@@ -116,9 +116,3 @@ For the DeepSpeech speech recognition and hotword example, see instructions at:
 ## License
 
 This repository is licensed under Apache 2.0.  See [Porcupine](https://github.com/Picovoice/Porcupine) for more details.
-
-## Change Log
-
-**0.0.1:**
-
-- first release
