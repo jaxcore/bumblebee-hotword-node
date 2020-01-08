@@ -1,6 +1,6 @@
 {
   "name": "bumblebee-hotword-node",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "BumbleBee Hotword for NodeJS",
   "main": "lib/bumblebee-node.js",
   "scripts": {
