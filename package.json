@@ -1,6 +1,6 @@
 {
   "name": "bumblebee-hotword-node",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "BumbleBee Hotword for NodeJS",
   "main": "index.js",
   "scripts": {
