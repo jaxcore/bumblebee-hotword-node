@@ -46,18 +46,18 @@ The hotwords available by default are:
 * hey edison
 * porcupine
 
-Due to processing time it is recommended to only add the hotwords that need to be used.  The hotword spoken can be retreived in the `.on('hotword')` event:
+The hotword that is detected can be retreived in the `.on('hotword')` event:
 
 ```
-bumblebee.addHotword('bumblebee');
-bumblebee.addHotword('grasshopper');
-bumblebee.addHotword('hey_edison');
-bumblebee.addHotword('porcupine');
-bumblebee.addHotword('terminator');
-
 bumblebee.on('hotword', function(hotword) {
 	console.log('hotword detected:', hotword);
 });
+```
+
+To only receive a hotword event for one of the hotwords, use the `setHotword()` method:
+
+```
+bumblebee.setHotword('hey_edison');
 ```
 
 The [Picovoice hotwords open source hotwords](https://github.com/Picovoice/Porcupine/tree/master/resources/keyword_files) are freely usable under the Apache 2.0 license.  Custom hotwords can be licensed from [https://picovoice.ai](https://picovoice.ai/).
