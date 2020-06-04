@@ -45,6 +45,7 @@ The hotwords available by default are:
 * grasshopper
 * hey edison
 * porcupine
+* terminator
 
 The hotword that is detected can be retreived in the `.on('hotword')` event:
 
@@ -61,6 +62,41 @@ bumblebee.setHotword('hey_edison');
 ```
 
 The [Picovoice hotwords open source hotwords](https://github.com/Picovoice/Porcupine/tree/master/resources/keyword_files) are freely usable under the Apache 2.0 license.  Custom hotwords can be licensed from [https://picovoice.ai](https://picovoice.ai/).
+
+### Add New Hotwords
+
+The default hotwords were open sourced and []supplied by Picovoice](https://github.com/Picovoice/porcupine/tree/master/resources/keyword_files/wasm).
+
+To convert a PPN hotword file to the formate used by BumbleBee, use the `xdd` command:
+
+```
+xxd -i -g 1 white\ smoke_wasm.ppn output.hex
+```
+
+Then take byte array contents of `output.hex`:
+
+```
+unsigned char americano_wasm_ppn[] = {
+    /* COPY THE CONTENTS HERE */
+};
+unsigned int americano_wasm_ppn_len = 3008;
+```
+
+And create aa new hotword JavaScript file with the format:
+
+```
+module.exports = new Uint8Array([
+    /* PASTE THE CONTENTS HERE */
+]);
+```
+
+Add the hotword file to BumbleBee using;
+
+```
+bumblebee.addHotword('white_smoke', require('./white_smoke.js'));
+```
+
+See the [full example]()
 
 ### Sensitivity
 
@@ -116,3 +152,7 @@ For the DeepSpeech speech recognition and hotword example, see instructions at:
 ## License
 
 This repository is licensed under Apache 2.0.  See [Porcupine](https://github.com/Picovoice/Porcupine) for more details.
+
+## Change Log
+
+- *v0.0.6*: upgrade to Porcupine v1.8 (latest as of May 28, 2020)

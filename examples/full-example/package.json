@@ -1,6 +1,6 @@
 {
   "name": "bumblebee-microphone-example",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "records microphone and prints hotwords when detected",
   "main": "start.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "wav": "^1.0.2",
-    "bumblebee-hotword-node": "0.0.5"
+    "bumblebee-hotword-node": "0.0.6"
   }
 }
