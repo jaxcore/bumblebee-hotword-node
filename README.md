@@ -65,7 +65,7 @@ The [Picovoice hotwords open source hotwords](https://github.com/Picovoice/Porcu
 
 ### Add New Hotwords
 
-The default hotwords were open sourced and []supplied by Picovoice](https://github.com/Picovoice/porcupine/tree/master/resources/keyword_files/wasm).
+The default hotwords were open sourced and [supplied by Picovoice](https://github.com/Picovoice/porcupine/tree/master/resources/keyword_files/wasm).
 
 To convert a PPN hotword file to the formate used by BumbleBee, use the `xdd` command:
 
@@ -82,7 +82,7 @@ unsigned char americano_wasm_ppn[] = {
 unsigned int americano_wasm_ppn_len = 3008;
 ```
 
-And create aa new hotword JavaScript file with the format:
+And create a new hotword JavaScript file with the format:
 
 ```
 module.exports = new Uint8Array([
@@ -96,7 +96,7 @@ Add the hotword file to BumbleBee using;
 bumblebee.addHotword('white_smoke', require('./white_smoke.js'));
 ```
 
-See the [full example]()
+See the [full example](https://jaxcore.github.io/bumblebee-hotword-node/full-example/)
 
 ### Sensitivity
 
