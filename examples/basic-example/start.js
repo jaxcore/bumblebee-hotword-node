@@ -1,3 +1,4 @@
+// const BumbleBee = require('bumblebee-hotword-node');
 const BumbleBee = require('../../');
 const bumblebee = new BumbleBee();
 bumblebee.addHotword('bumblebee');

@@ -2,7 +2,8 @@ var fs = require('fs');
 var wav = require('wav');
 var Speaker = require('speaker');
 
-const BumbleBee = require('bumblebee-hotword-node');
+// const BumbleBee = require('bumblebee-hotword-node');
+const BumbleBee = require('../../');
 
 const bumblebee = new BumbleBee();
 bumblebee.setSensitivity(0.5);
