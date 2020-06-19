@@ -1,14 +1,18 @@
-# BumbleBee Hotword for NodeJS
+# Bumblebee Hotword for NodeJS
 
 ![screenshot](https://raw.githubusercontent.com/jaxcore/bumblebee-hotword-node/master/logo.png)
 
+-- 
+Bumblebee Node starts recording the system microphone and emits an event when it hears the available hotwords.
+
 This is a stripped down and repackaged version of the excellent [Porcupine](https://github.com/Picovoice/Porcupine) wake word (hotword) system. This requires no cloud services and is freely available to use under the Apache 2.0 license (GPLv3 compatible).
 
-This is the NodeJS version of BumbleBee.  If you need hotword detection in the browser or ElectronJS see the:
+This is the NodeJS version of Bumblebee.  If you need hotword detection in the browser or ElectronJS see [here](https://github.com/jaxcore/bumblebee-hotword).
 
-- [https://github.com/jaxcore/bumblebee-hotword](https://github.com/jaxcore/bumblebee-hotword)
+If you are looking for the Bumblebee voice application server, it is here;
 
-BumbleBee Node starts recording the system microphone and emits an event when it hears the available hotwords.
+- [https://github.com/jaxcore/bumblebee](https://github.com/jaxcore/bumblebee)
+
 
 ## Examples
 
@@ -26,8 +30,8 @@ npm install bumblebee-hotword-node
 ### Quick Start
 
 ```
-const BumbleBee = require('bumblebee-hotword-node');
-const bumblebee = new BumbleBee();
+const Bumblebee = require('bumblebee-hotword-node');
+const bumblebee = new Bumblebee();
 bumblebee.addHotword('bumblebee');
 
 bumblebee.on('hotword', function (hotword) {
@@ -67,7 +71,7 @@ The [Picovoice hotwords open source hotwords](https://github.com/Picovoice/Porcu
 
 The default hotwords were open sourced and [supplied by Picovoice](https://github.com/Picovoice/porcupine/tree/master/resources/keyword_files/wasm).
 
-To convert a PPN hotword file to the formate used by BumbleBee, use the `xdd` command:
+To convert a PPN hotword file to the formate used by Bumblebee, use the `xdd` command:
 
 ```
 xxd -i -g 1 white\ smoke_wasm.ppn output.hex
@@ -90,7 +94,7 @@ module.exports = new Uint8Array([
 ]);
 ```
 
-Add the hotword file to BumbleBee using;
+Add the hotword file to Bumblebee using;
 
 ```
 bumblebee.addHotword('white_smoke', require('./white_smoke.js'));
@@ -106,7 +110,7 @@ Hotword detection sensitivity (0.0 to 1.0) is configurable only before the first
 bumblebee.setSensitivity(0.8);
 ```
 
-### Disable BumbleBee
+### Disable Bumblebee
 
 Use the stop() method to disable the microphone and all processing:
 
