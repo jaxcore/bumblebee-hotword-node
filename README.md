@@ -140,14 +140,9 @@ For the [full](https://jaxcore.github.io/bumblebee-hotword/full-example/) exampl
 
 ```
 cd examples/full-example
-npm install
-npm install speaker --mpg123-backend=openal --no-save
+npm install --mpg123-backend=openal
 node start.js
 ```
-
-For the DeepSpeech speech recognition and hotword example, see instructions at:
-
-- [https://github.com/jaxcore/deepspeech-plugin](https://github.com/jaxcore/deepspeech-plugin)
 
 ## License
 
@@ -155,4 +150,5 @@ This repository is licensed under Apache 2.0.  See [Porcupine](https://github.co
 
 ## Change Log
 
+- *v0.0.7*: refactor Porcupine files, added the float32 to the "data" event
 - *v0.0.6*: upgrade to Porcupine v1.8 (latest as of May 28, 2020)

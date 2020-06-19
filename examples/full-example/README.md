@@ -1,12 +1,10 @@
-```
-npm install
-```
-
-MacOS users will need to install `speaker`` separately:
+INSTALL
 
 ```
-npm install speaker --mpg123-backend=openal
+npm install --mpg123-backend=openal
 ```
+
+RUN
 
 ```
 node start

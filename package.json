@@ -1,7 +1,7 @@
 {
   "name": "bumblebee-hotword-node",
-  "version": "0.0.6",
-  "description": "BumbleBee Hotword for NodeJS",
+  "version": "0.0.7",
+  "description": "Bumblebee Hotword for NodeJS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
