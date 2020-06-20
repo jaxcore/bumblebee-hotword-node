@@ -5,7 +5,12 @@ var Speaker = require('speaker');
 // const BumbleBee = require('bumblebee-hotword-node');
 const BumbleBee = require('../../');
 
-const bumblebee = new BumbleBee();
+const bumblebee = new BumbleBee({
+	// program: 'rec',
+	// paths: {
+	// 	rec: '/usr/local/bin/rec'
+	// }
+});
 bumblebee.setSensitivity(0.5);
 
 bumblebee.addHotword('bumblebee');

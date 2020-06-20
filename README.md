@@ -154,5 +154,6 @@ This repository is licensed under Apache 2.0.  See [Porcupine](https://github.co
 
 ## Change Log
 
+- *v0.0.9*: now includes a modified copy of `node-audiorecorder` that exposes a paths option, see full-example
 - *v0.0.8*: refactor Porcupine files, added the float32 to the "data" event, and a typo
 - *v0.0.6*: upgrade to Porcupine v1.8 (latest as of May 28, 2020)
