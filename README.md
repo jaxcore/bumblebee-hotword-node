@@ -1,6 +1,6 @@
 # Bumblebee Hotword for NodeJS
 
-![screenshot](https://raw.githubusercontent.com/jaxcore/bumblebee-hotword-node/master/logo.png)
+![screenshot](logo.png)
 
 -- 
 Bumblebee Node starts recording the system microphone and emits an event when it hears the available hotwords.
