@@ -2,17 +2,15 @@
 
 ![screenshot](logo.png)
 
--- 
-Bumblebee Node starts recording the system microphone and emits an event when it hears the available hotwords.
+Bumblebee Hotword starts recording the system microphone and emits an event when it hears the available hotwords.
 
 This is a stripped down and repackaged version of the excellent [Porcupine](https://github.com/Picovoice/Porcupine) wake word (hotword) system. This requires no cloud services and is freely available to use under the Apache 2.0 license (GPLv3 compatible).
 
-This is the NodeJS version of Bumblebee.  If you need hotword detection in the browser or ElectronJS see [here](https://github.com/jaxcore/bumblebee-hotword).
+This is the NodeJS version of Bumblebee Hotword.  If you need hotword detection in the browser or ElectronJS see [here](https://github.com/jaxcore/bumblebee-hotword).
 
-If you are looking for the Bumblebee voice application server, it is here;
+Hotword detection is just one part of the larger Bumblebee voice application framework, for more information see;
 
 - [https://github.com/jaxcore/bumblebee](https://github.com/jaxcore/bumblebee)
-
 
 ## Examples
 

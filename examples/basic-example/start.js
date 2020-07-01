@@ -8,3 +8,5 @@ bumblebee.on('hotword', function (hotword) {
 });
 
 bumblebee.start();
+
+console.log('Say "bumblebee"');

@@ -1,6 +1,6 @@
 {
   "name": "bumblebee-hotword-node",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Bumblebee Hotword for NodeJS",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "speech",
     "recognition"
   ],
-  "author": "Dan Steinman",
+  "author": "Jaxcore Software Inc",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/jaxcore/bumblebee-hotword-node/issues"

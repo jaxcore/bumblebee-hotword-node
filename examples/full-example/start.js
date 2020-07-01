@@ -18,9 +18,11 @@ bumblebee.addHotword('grasshopper');
 bumblebee.addHotword('hey_edison');
 bumblebee.addHotword('porcupine');
 bumblebee.addHotword('terminator');
+bumblebee.addHotword('blueberry');
+bumblebee.addHotword('white_smoke');
 
 // add new hotword
-bumblebee.addHotword('white_smoke', require('./white_smoke.js'));
+// bumblebee.addHotword('white_smoke', require('./white_smoke.js'));
 
 bumblebee.on('hotword', function (hotword) {
 	console.log('');
