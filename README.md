@@ -45,9 +45,11 @@ The hotwords available by default are:
 
 * bumblebee
 * grasshopper
-* hey edison
+* hey_edison
 * porcupine
 * terminator
+* blueberry
+* white_smoke
 
 The hotword that is detected can be retreived in the `.on('hotword')` event:
 
@@ -92,7 +94,7 @@ module.exports = new Uint8Array([
 ]);
 ```
 
-Add the hotword file to Bumblebee using;
+Add the hotword file to Bumblebee Hotword using;
 
 ```
 bumblebee.addHotword('white_smoke', require('./white_smoke.js'));
@@ -118,7 +120,7 @@ bumblebee.stop();
 
 ### Audio Data
 
-Bumblebee records audio from the microphone in 16bit/16khz PCM format and emits a stream of "data" events so the audio can be processed by other systems (such as [DeepSpeech](https://github.com/jaxcore/deepspeech-plugin)):
+Bumblebee Hotword records audio from the microphone in 16bit/16khz PCM format and emits a stream of "data" events so the audio can be processed by other systems (such as [DeepSpeech](https://github.com/jaxcore/deepspeech-plugin)):
 
 ```
 bumblebee.on('data', function(data) {
@@ -152,6 +154,7 @@ This repository is licensed under Apache 2.0.  See [Porcupine](https://github.co
 
 ## Change Log
 
+- *v0.0.10*: added white_smoke and blueberry to default hotwords, clean up debug statements
 - *v0.0.9*: now includes a modified copy of `node-audiorecorder` that exposes a paths option, see full-example
 - *v0.0.8*: refactor Porcupine files, added the float32 to the "data" event, and a typo
 - *v0.0.6*: upgrade to Porcupine v1.8 (latest as of May 28, 2020)
