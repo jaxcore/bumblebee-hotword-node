@@ -8,7 +8,7 @@ This is a stripped down and repackaged version of the excellent [Porcupine](http
 
 This is the NodeJS version of Bumblebee Hotword.  If you need hotword detection in the browser or ElectronJS see [here](https://github.com/jaxcore/bumblebee-hotword).
 
-Hotword detection is just one part of the larger Bumblebee voice application framework, for more information see;
+Hotword detection is just one part of the larger Bumblebee voice application framework, for more information see:
 
 - [https://github.com/jaxcore/bumblebee](https://github.com/jaxcore/bumblebee)
 
@@ -154,6 +154,7 @@ This repository is licensed under Apache 2.0.  See [Porcupine](https://github.co
 
 ## Change Log
 
+- *v0.1.0*: fixed `sox` path for Ubuntu/Linux
 - *v0.0.10*: added white_smoke and blueberry to default hotwords, clean up debug statements
 - *v0.0.9*: now includes a modified copy of `node-audiorecorder` that exposes a paths option, see full-example
 - *v0.0.8*: refactor Porcupine files, added the float32 to the "data" event, and a typo
