@@ -6,6 +6,7 @@ var Speaker = require('speaker');
 const BumbleBee = require('../../');
 
 const bumblebee = new BumbleBee({
+	// device: '/dev/...',
 	// program: 'rec',
 	// paths: {
 	// 	rec: '/usr/local/bin/rec'
