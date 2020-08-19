@@ -12,11 +12,6 @@ Hotword detection is just one part of the larger Bumblebee voice application fra
 
 - [https://github.com/jaxcore/bumblebee](https://github.com/jaxcore/bumblebee)
 
-## Examples
-
-- [Basic Example](https://jaxcore.github.io/bumblebee-hotword-node/basic-example/) - most simple example possible
-- [Full Example](https://jaxcore.github.io/bumblebee-hotword-node/full-example/) - all options available, plays a sound when a hotword is detected
-
 ## Install
 
 Using npm:
@@ -128,25 +123,43 @@ bumblebee.on('data', function(data) {
 });
 ```
 
+### Audio Stream
+
+Instead of using the system microphone, an audio stream can be supplied.  The audio format must be a Float32Array (32 bit signed floating point values) at 16Khz sample rate.  Refer to the `wav-example` example.
+
+```
+// some audioInputStream object (eg. ffmpeg)
+
+bumblebee.start({stream: audioInputStream});
+```
 
 ## Run Examples Locally
 
 Clone this repo, then...
 
-For the [basic](https://jaxcore.github.io/bumblebee-hotword/basic-example/) example:
+For the `basic` example:
 
 ```
 cd examples/basic-example
 node start.js
 ```
 
-For the [full](https://jaxcore.github.io/bumblebee-hotword/full-example/) example:
+For the `full` example:
 
 ```
 cd examples/full-example
 npm install --mpg123-backend=openal
 node start.js
 ```
+
+For the `wav` file stream example:
+
+```
+cd examples/wav-example
+npm install fluent-ffmpeg
+node start.js
+```
+
 
 ## License
 
