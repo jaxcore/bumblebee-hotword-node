@@ -14,13 +14,16 @@ const bumblebee = new BumbleBee({
 });
 bumblebee.setSensitivity(0.5);
 
+bumblebee.addHotword('alexa');
+bumblebee.addHotword('computer');
 bumblebee.addHotword('bumblebee');
 bumblebee.addHotword('grasshopper');
 bumblebee.addHotword('hey_edison');
+bumblebee.addHotword('hey_google');
+bumblebee.addHotword('hey_siri');
+bumblebee.addHotword('jarvis');
 bumblebee.addHotword('porcupine');
 bumblebee.addHotword('terminator');
-bumblebee.addHotword('blueberry');
-bumblebee.addHotword('white_smoke');
 
 // add new hotword
 // bumblebee.addHotword('white_smoke', require('./white_smoke.js'));

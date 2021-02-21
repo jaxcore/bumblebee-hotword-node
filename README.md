@@ -38,13 +38,16 @@ bumblebee.start();
 
 The hotwords available by default are:
 
+* alexa
+* computer
 * bumblebee
 * grasshopper
 * hey_edison
+* hey_google
+* hey_siri
+* jarvis
 * porcupine
 * terminator
-* blueberry
-* white_smoke
 
 The hotword that is detected can be retreived in the `.on('hotword')` event:
 
@@ -167,6 +170,7 @@ This repository is licensed under Apache 2.0.  See [Porcupine](https://github.co
 
 ## Change Log
 
+- *v0.2.0*: upgrade to Porcupine v1.9, added new hotwords
 - *v0.1.1*: added `device` path option to be sent to sox/rec
 - *v0.1.0*: fixed `sox` path for Ubuntu/Linux
 - *v0.0.10*: added white_smoke and blueberry to default hotwords, clean up debug statements
