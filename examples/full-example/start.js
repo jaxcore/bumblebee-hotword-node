@@ -22,6 +22,7 @@ bumblebee.addHotword('hey_edison');
 bumblebee.addHotword('hey_google');
 bumblebee.addHotword('hey_siri');
 bumblebee.addHotword('jarvis');
+bumblebee.addHotword('ok_google');
 bumblebee.addHotword('porcupine');
 bumblebee.addHotword('terminator');
 

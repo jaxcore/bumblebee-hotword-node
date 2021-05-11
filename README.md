@@ -25,6 +25,7 @@ npm install bumblebee-hotword-node
 ```
 const Bumblebee = require('bumblebee-hotword-node');
 const bumblebee = new Bumblebee();
+
 bumblebee.addHotword('bumblebee');
 
 bumblebee.on('hotword', function (hotword) {
@@ -46,8 +47,25 @@ The hotwords available by default are:
 * hey_google
 * hey_siri
 * jarvis
+* ok google
 * porcupine
 * terminator
+
+These hotwords are build into the NPM package but must be added to Bumblebee individually.  For performance it is recommended to only add the hotwords that are needed:
+
+```
+bumblebee.addHotword('alexa');
+bumblebee.addHotword('computer');
+bumblebee.addHotword('bumblebee');
+bumblebee.addHotword('grasshopper');
+bumblebee.addHotword('hey_edison');
+bumblebee.addHotword('hey_google');
+bumblebee.addHotword('hey_siri');
+bumblebee.addHotword('jarvis');
+bumblebee.addHotword('ok_google');
+bumblebee.addHotword('porcupine');
+bumblebee.addHotword('terminator');
+```
 
 The hotword that is detected can be retreived in the `.on('hotword')` event:
 
@@ -170,10 +188,7 @@ This repository is licensed under Apache 2.0.  See [Porcupine](https://github.co
 
 ## Change Log
 
+- *v0.2.1*: added "Ok Google" hotword
 - *v0.2.0*: upgrade to Porcupine v1.9, added new hotwords
 - *v0.1.1*: added `device` path option to be sent to sox/rec
 - *v0.1.0*: fixed `sox` path for Ubuntu/Linux
-- *v0.0.10*: added white_smoke and blueberry to default hotwords, clean up debug statements
-- *v0.0.9*: now includes a modified copy of `node-audiorecorder` that exposes a paths option, see full-example
-- *v0.0.8*: refactor Porcupine files, added the float32 to the "data" event, and a typo
-- *v0.0.6*: upgrade to Porcupine v1.8 (latest as of May 28, 2020)
